@@ -1,247 +1,260 @@
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Fira sans' , sans-serif;
-}
+    *
+    {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Fira sans' , sans-serif;
+    }
 
-body
-{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url('https://img1.wallspic.com/previews/5/7/6/4/14675/14675-black-monochrome-water-close_up-darkness-550x310.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-    color: white;
-}
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-image: url('https://img1.wallspic.com/previews/5/7/6/4/14675/14675-black-monochrome-water-close_up-darkness-550x310.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        color: white;
+    }
 
-header
-{
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-}
+    header
+    {
+        padding: 2rem 1rem;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-header h1 
-{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: gray;
-    margin-bottom: 1rem;
-    text-align: center;
-}
+    header h1 
+    {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background-image: linear-gradient(to right, yellow, black );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 
-                                    /* New task Input CSS */
+                                        /* New task Input CSS */
 
-#new-task-form
-{
-    display: flex;
-}
+    #new-task-form
+    {
+        display: flex;
+    }
 
-input, button
-{
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-}
+    input, button
+    {
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+    }
 
-#new-task-input
-{
-    flex: 1 1 0%;
-    background-color: gray;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    color: rgb(36, 3, 3);
-    font-size: 1.25rem;
-}
+    #new-task-input
+    {
+        flex: 1 1 0%;
+        background-color: gray;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        color: rgb(36, 3, 3);
+        font-size: 1.35rem;
+    }
 
-#new-task-input::placeholder
-{
-    color: rgb(49, 10, 10);
-}
+    #new-task-input::placeholder
+    {
+        color: rgb(49, 10, 10);
+    }
 
-#new-task-submit
-{
-    color: rgb(173, 19, 45);
-    font-size: 1.25rem;
-    font-weight: 700;
-    background-image: linear-gradient(to right, pink, purple);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    border: solid purple;
-    border-radius: 1rem;
-}
+    #new-task-submit
+    {
+        color: rgb(173, 19, 45);
+        font-size: 1.25rem;
+        font-weight: 700;
+        background-image: linear-gradient(to right, pink, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        border: solid purple;
+        border-radius: 1rem;
+    }
 
-#new-task-submit:hover
-{
-    opacity: 0.8rem;
-}
+    #new-task-submit:hover
+    {
+        opacity: 0.8rem;
+    }
 
-#new-task-submit:active
-{
-    opacity: 0.6;
-}
+    #new-task-submit:active
+    {
+        opacity: 0.6;
+    }
 
-                                        /* Main Section of Task list */
+                                            /* Main Section of Task list */
 
-main
-{
-    flex: 1 1 0%;;
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;  
-}
+    main
+    {
+        flex: 1 1 0%;;
+        padding: 2rem 1rem;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;  
+    }
 
-.task-list
-{
-    padding: 1rem;
-}
+    .task-list
+    {
+        padding: 1rem;
+    }
 
-.task-list h2
-{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: grey;
-    margin-bottom: 1rem;
-    text-align: center;
-}
+    .task-list h2
+    {
+        font-size: 1.9rem;
+        font-weight: bold;
+        background-image: linear-gradient(to right, Red, Black );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
 
-#tasks .task
-{
-    display: flex;
-    justify-content: space-between;
-    background-color: grey ;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
+    #tasks .task
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: grey ;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
 
-#tasks .task .content .text
-{
-    color: rgb(49, 10, 10);
-    font-size: 1.125rem;
-    width: 100%;
-    display: block;
-}
+    #tasks .task .content
+    {
+        flex: 1 1 0%;
+    }
 
-#tasks .task .content .text:not(:read-only)
-{
-    color: yellow;
-}
+    #tasks .task .content .text
+    {
+        color: rgb(49, 10, 10);
+        font-size: 1.55rem;
+        width: 100%;
+        display: block;
+    }
 
-#tasks .task .actions
-{
-    display: flex;
-    margin: 0 -0.5rem;
-}
-.task .actions button
-{
-    cursor: pointer;
-    margin: 0 0.5rem;
-    font-size: 1.125rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.4s;
-}
-
-.task .actions button:hover
-{
-    opacity: 0.8;
-}
-
-.task .actions button:active
-{
-    opacity: 0.6;
-}
-
-.task .actions .edit
-{
-    background-image: linear-gradient(to right, black, blue );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    /* border: solid purple; */
-    /* border-radius: 1rem; */
-}
-
-.task .actions .delete
-{
-    background-image: linear-gradient(to right, black, crimson );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    /* border: solid purple; */
-    /* border-radius: 1rem; */
-}
-
-.task .actions .completed
-{
-    background-image: linear-gradient(to right, black, green );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    /* border: solid purple; */
-    /* border-radius: 1rem; */
-}
+    #tasks .task .content .text:not(:read-only)
+    {
+        color: Red;
+    }
 
 
-                                                    /* Completed Tasks CSS */
+    #tasks .task .actions
+    {
+        display: flex;
+        margin: 0 -0.5rem;
+    }
+    .task .actions button
+    {
+        cursor: pointer;
+        margin: 0 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.4s;
+    }
 
-main
-{
-    flex: 1 1 0%;;
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;  
-}
+    .task .actions button:hover
+    {
+        opacity: 0.8;
+    }
 
-.completed-list
-{
-    padding: 1rem;
-}
+    .task .actions button:active
+    {
+        opacity: 0.6;
+    }
 
-.completed-list h2
-{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: grey;
-    margin-bottom: 1rem;
-    text-align: center;
-}
+    .task .actions .edit
+    {
+        background-image: linear-gradient(to right, black, blue );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        /* border: solid purple; */
+        /* border-radius: 1rem; */
+    }
 
-#taskC .task
-{
-    display: flex;
-    justify-content: space-between;
-    background-color: grey ;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
+    .task .actions .delete
+    {
+        background-image: linear-gradient(to right, black, crimson );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        /* border: solid purple; */
+        /* border-radius: 1rem; */
+    }
 
-#taskC .task .content .text
-{
-    color: rgb(49, 10, 10);
-    font-size: 1.125rem;
-    width: 100%;
-    display: block;
-    /* margin-left: 140%; */
-}
+    .task .actions .completed
+    {
+        background-image: linear-gradient(to right, black, green );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        /* border: solid purple; */
+        /* border-radius: 1rem; */
+    }
 
-#taskC .task .content .text:not(:read-only)
-{
-    color: yellow;
-}
 
-#taskC .task .actions
-{
-    display: flex;
-    margin: 0 -0.5rem;
-}
+                                                        /* Completed Tasks CSS */
+
+    main
+    {
+        flex: 1 1 0%;;
+        padding: 2rem 1rem;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;  
+    }
+
+    .completed-list
+    {
+        padding: 1rem;
+    }
+
+    .completed-list h2
+    {
+        font-size: 1.9rem;
+        font-weight: bold;
+        background-image: linear-gradient(to right, Green, Black );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #taskC .taskC
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: grey ;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #taskC .taskC .contentC .textCo
+    {
+        color: green;
+        font-size: 1.425rem;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+        margin-left: 100%;
+    }
+
+    #taskC .taskC .contentC .textCo:not(:read-only)
+    {
+        color: yellow;
+    }
+
+    #taskC .taskC .actions
+    {
+        display: flex;
+        margin: 0 -0.5rem;
+    }
