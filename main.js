@@ -55,14 +55,6 @@
 
             task_actions_el.appendChild(task_delete_el);
 
-                    // For Completed Tasks
-
-            const task_completed_el = document.createElement("button");
-            task_completed_el.classList.add("completed");
-            task_completed_el.innerHTML = "Completed";
-    
-            task_actions_el.appendChild(task_completed_el);
-
             task_el.appendChild(task_actions_el);
 
             list_el.appendChild(task_el);
@@ -88,5 +80,14 @@
             {
                 list_el.removeChild(task_el);
             });
+
+                    // Completed Button
+
+            task_completed_el.addEventListener('click', () =>
+            {
+                list1_el.appendChild(task_el);
+                
+            });
+        
         });
     });
